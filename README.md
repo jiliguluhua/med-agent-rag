@@ -3,9 +3,11 @@
 本项目是一个基于 **LangGraph** 和 **Hybrid RAG** 架构的医疗智能体系统，旨在实现从 DICOM 影像处理到临床决策支持的全链路自动化。
 
 ## quick start
+<img width="803" height="427" alt="preview" src="https://github.com/user-attachments/assets/021409e2-ff72-4b28-808d-136c0cf8b7a6" />
 
-1. **启动后端接口**: `uvicorn app.main:app --reload`
-2. **启动前端演示**: `streamlit run streamlit_app.py`（前端待优化）
+
+1. **启动前端演示**: `streamlit run streamlit_app.py`（前端界面待优化）
+2. **启动后端接口**: `uvicorn app.main:app --reload`
 
 ## 系统架构
 
