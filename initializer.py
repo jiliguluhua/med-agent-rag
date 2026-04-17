@@ -28,6 +28,15 @@ class SystemInitializer:
         else:
             print("医学分割模型已就绪。")
         return target_path
+        
+    def get_llm(self, temperature=0):
+        """统一获取 LLM 客户端"""
+        return ChatOpenAI(
+            model="deepseek-chat",
+            openai_api_key=config.LLM_API_KEY,
+            openai_api_base="https://api.deepseek.com",
+            temperature=temperature
+        )
     
     def setup_knowledge(self, filename):
         """初始化认知层知识库 (RAG)"""
